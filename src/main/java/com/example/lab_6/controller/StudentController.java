@@ -37,7 +37,7 @@ public class StudentController {
         return mav;
     }
 
-    @PostMapping("/saveStudents")
+    @PostMapping("/saveStudent")
     public String saveStudent(@ModelAttribute Student student) {
         studentRepository.save(student);
         return "redirect:/list";
